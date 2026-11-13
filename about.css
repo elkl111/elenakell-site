@@ -162,3 +162,7 @@
 .ab-head.live .ab-sign .pen{transition-delay:calc(.7s + var(--d))}
 @media (max-width:900px){.ab-pin{height:260vh}.ab-stage{height:min(66vh,580px)}}
 @media (prefers-reduced-motion:reduce){.ab-pin{height:auto}.ab-pin-inner{position:static;height:auto}}
+
+/* intersection: clip both circles explicitly. Some browsers stop honouring the rounded
+   overflow once the layers inside are moved or blended, which showed the AI circle as a square */
+.ring{clip-path:circle(50% at 50% 50%);-webkit-clip-path:circle(50% at 50% 50%);isolation:isolate}
