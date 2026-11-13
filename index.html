@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elena Kell — Where the magic of being human meets AI</title>
+<meta name="description" content="AI workshops, VIP days and a membership for entrepreneurs and leaders who want to use AI without outsourcing their critical thinking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=WindSong:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=43">
+<link rel="stylesheet" href="motion.css?v=40">
+<link rel="stylesheet" href="about.css?v=53">
+</head>
+<body>
+
+
+<!-- The living painting (WebGL) -->
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="scene-fallback" aria-hidden="true"></div>
+
+<canvas id="trail" aria-hidden="true"></canvas>
+<div class="star-cur" aria-hidden="true"><i></i></div>
+
+<header class="top">
+  <a class="wordmark" href="#top">elena kell</a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="mb-open">Menu</span><span class="mb-close">Close</span><i></i></button>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-list">
+    <a href="#philosophy"><i>I</i>Philosophy</a>
+    <a href="#workshops"><i>II</i>Workshops</a>
+    <a href="#vip"><i>III</i>VIP AI Day</a>
+    <a href="#coaching"><i>IV</i>1:1 Coaching</a>
+    <a href="#membership"><i>V</i>Membership</a>
+    <a href="#with-elena"><i>VI</i>About Elena</a>
+    <a href="#hello"><i>VII</i>Get in touch</a>
+  </nav>
+  <div class="menu-foot">
+    <a href="mailto:hello@elenakell.com?subject=Hello%20from%20your%20website">Send me a message</a>
+    <span><a href="https://www.youtube.com/@elenakell" target="_blank" rel="noopener">YouTube</a><a href="https://elenakell.substack.com/subscribe" target="_blank" rel="noopener">Substack</a><a href="https://www.skool.com/aisolopreneurclub/about" target="_blank" rel="noopener">Skool</a><a href="https://www.linkedin.com/in/elenakell/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </div>
+</div>
+
+<nav class="index" aria-label="Chapters">
+  <a href="#philosophy" data-ch="philosophy"><span>Philosophy</span><i>I</i></a>
+  <a href="#workshops" data-ch="workshops"><span>Workshops</span><i>II</i></a>
+  <a href="#vip" data-ch="vip"><span>VIP AI Day</span><i>III</i></a>
+  <a href="#coaching" data-ch="coaching"><span>1:1 Coaching</span><i>IV</i></a>
+  <a href="#membership" data-ch="membership"><span>Membership</span><i>V</i></a>
+  <a href="#with-elena" data-ch="with-elena"><span>About Elena</span><i>VI</i></a>
+  <a href="#hello" data-ch="hello"><span>Get in touch</span><i>VII</i></a>
+</nav>
+
+<main id="top">
+
+  <!-- HERO: the painting, then what the machine sees -->
+  <section class="hero" id="hero">
+    <div class="hero-stage">
+      <svg class="grid-lines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" y1="556" x2="1600" y2="556"/><line x1="989" y1="0" x2="989" y2="900"/>
+        <line x1="611" y1="0" x2="611" y2="900"/><line x1="0" y1="344" x2="1600" y2="344"/>
+        <path d="M611 900 A 378 556 0 0 1 989 344"/><path d="M989 344 A 234 344 0 0 1 1223 0" />
+      </svg>
+
+      <div class="hero-copy">
+        <p class="eyebrow">AI education &amp; strategy for entrepreneurs and leaders</p>
+        <h1>
+          <span class="line"><span>Where the magic</span></span>
+          <span class="line"><span>of being human</span></span>
+          <span class="line serif"><span><em>meets AI.</em></span></span>
+        </h1>
+      </div>
+
+      <p class="hero-note">Move your cursor across the painting.<br>That glow is what the machine sees.</p>
+      <div class="scroll-cue"><i></i>Scroll</div>
+
+      <div class="caption cap-1">
+        <p class="eyebrow">What the machine sees</p>
+        <p class="cap-text">Edges. Patterns.<br><em>Probabilities.</em></p>
+      </div>
+      <div class="caption cap-2">
+        <p class="cap-text">Only humans<br><em>can bring the meaning.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- I. PHILOSOPHY -->
+  <section class="philosophy" id="philosophy" data-chapter="philosophy">
+    <p class="eyebrow"><i>I</i> The philosophy</p>
+    <p class="manifesto" data-words>You can use AI without outsourcing your authenticity or your critical thinking. You have to be intentional about how you use the tools, and keep your own <em>taste</em>, <em>discernment</em> and <em>judgment</em> in the room.</p>
+  </section>
+
+  <!-- II. THE INTERSECTION -->
+  <section class="intersection" id="intersection">
+    <div class="inter-stage">
+      <p class="eyebrow inter-eyebrow">The intersection</p>
+      <div class="rings">
+        <div class="ring ring-human">
+          <div class="ring-art"><img crossorigin="anonymous" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1920px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"></div>
+          <span class="ring-label">Human</span>
+          <ul><li>Taste</li><li>Judgment</li><li>Your story</li><li>Intuition</li></ul>
+        </div>
+        <div class="ring ring-ai">
+          <div class="ring-art ring-art-both"><img crossorigin="anonymous" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1920px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"></div>
+          <div class="ring-art ring-art-lines"><canvas id="lines"></canvas></div>
+          <span class="ring-label">AI</span>
+          <ul><li>Speed</li><li>Patterns</li><li>Memory</li><li>Scale</li></ul>
+        </div>
+        <div class="ring-core">
+          <p>The work<br><em>only you</em><br>could make</p>
+        </div>
+      </div>
+      <p class="inter-line">Everything I teach lives in the overlap.</p>
+    </div>
+  </section>
+
+  <div class="mist" aria-hidden="true">
+    <div class="mist-solid" data-theme="light"></div>
+    <svg viewBox="0 0 1200 360" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".78" stop-color="#fff" stop-opacity="1"/></linearGradient>
+        <linearGradient id="mg2" x1="0" y1="0" x2="0" y2="1"><stop offset=".12" stop-color="#fff" stop-opacity="0"/><stop offset=".7" stop-color="#fff" stop-opacity="1"/></linearGradient>
+        <filter id="mf1" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency=".0035 .011" numOctaves="5" seed="11" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1 0 0 0 0" result="na"/>
+        <feComposite in="SourceGraphic" in2="na" operator="arithmetic" k1="1.9" k2=".62" k3="0" k4="-.3" result="c"/>
+        <feComponentTransfer in="c" result="t"><feFuncA type="linear" slope="2.6" intercept="-.32"/></feComponentTransfer>
+        <feGaussianBlur in="t" stdDeviation="2.2" result="b"/>
+        <feFlood flood-color="#d9a99c"/><feComposite in2="b" operator="in"/>
+      </filter>
+        <filter id="mf2" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency=".0045 .013" numOctaves="5" seed="4" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1 0 0 0 0" result="na"/>
+        <feComposite in="SourceGraphic" in2="na" operator="arithmetic" k1="1.9" k2=".62" k3="0" k4="-.3" result="c"/>
+        <feComponentTransfer in="c" result="t"><feFuncA type="linear" slope="2.6" intercept="-.32"/></feComponentTransfer>
+        <feGaussianBlur in="t" stdDeviation="2.2" result="b"/>
+        <feFlood flood-color="#efe2cf"/><feComposite in2="b" operator="in"/>
+      </filter>
+        <filter id="mf3" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency=".005 .015" numOctaves="5" seed="23" result="n"/>
+        <feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  1 0 0 0 0" result="na"/>
+        <feComposite in="SourceGraphic" in2="na" operator="arithmetic" k1="1.9" k2=".62" k3="0" k4="-.3" result="c"/>
+        <feComponentTransfer in="c" result="t"><feFuncA type="linear" slope="2.6" intercept="-.32"/></feComponentTransfer>
+        <feGaussianBlur in="t" stdDeviation="2.2" result="b"/>
+        <feFlood flood-color="#e9e4d3"/><feComposite in2="b" operator="in"/>
+      </filter>
+      </defs>
+      <rect width="1200" height="360" fill="url(#mg)" filter="url(#mf1)" opacity=".55"/>
+      <rect y="40" width="1200" height="320" fill="url(#mg)" filter="url(#mf2)" opacity=".8"/>
+      <rect y="110" width="1200" height="250" fill="url(#mg2)" filter="url(#mf3)"/>
+    </svg>
+  </div>
+
+  <!-- III–V. THE OFFERS -->
+  <div class="acts">
+
+    <section class="act act-workshops" id="workshops" data-chapter="workshops" data-theme="light">
+      <svg class="act-lines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" y1="556" x2="1600" y2="556" pathLength="1"/><line x1="989" y1="0" x2="989" y2="900" pathLength="1"/>
+        <line x1="0" y1="96" x2="1600" y2="96" pathLength="1"/><path d="M989 900 A 611 556 0 0 1 1600 344" pathLength="1"/>
+      </svg>
+      <div class="act-inner">
+        <div class="act-text">
+          <p class="eyebrow"><i>II</i> AI strategy and hands-on workshops</p>
+          <h2 class="act-title">Workshops</h2>
+          <p class="act-lead">Your team already has the tools. Most people use a fraction of what they can do.</p>
+          <p class="act-body">We start with strategy, so you know where AI is worth your time. Then we open the tools and your team learns Claude or ChatGPT on their own real work, with their judgment switched on.</p>
+          <ul class="act-list">
+            <li><i>01</i><span><b>AI strategy.</b> We map where AI belongs in your business and where it doesn't. You leave with an actionable roadmap.</span></li>
+            <li><i>02</i><span><b>Hands-on workshops.</b> 2 days inside the tools, for 5–12 people. Each person leaves with a team of agents built for their own work.</span></li>
+            <li><i>03</i><span><b>A playbook</b> your team keeps using long after I've left the room.</span></li>
+          </ul>
+          <a class="cta" href="mailto:hello@elenakell.com?subject=Enquiry%3A%20Workshops"><span class="cta-label">Enquire about a workshop</span></a>
+        </div>
+        <figure class="arch">
+          <img data-parallax crossorigin="anonymous" alt="The School of Athens by Raphael" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/1920px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg">
+          <figcaption>Raphael, The School of Athens, c. 1510</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="act act-vip" id="vip" data-chapter="vip">
+      <svg class="act-lines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" y1="556" x2="1600" y2="556" pathLength="1"/><line x1="989" y1="0" x2="989" y2="900" pathLength="1"/>
+        <line x1="0" y1="96" x2="1600" y2="96" pathLength="1"/><path d="M989 900 A 611 556 0 0 1 1600 344" pathLength="1"/>
+      </svg>
+      <div class="act-inner">
+        <div class="act-text">
+          <p class="eyebrow"><i>III</i> 1:1 · Done with you · For CEOs and founders</p>
+          <h2 class="act-title">VIP AI Day</h2>
+          <p class="act-lead">One focused day where we build your AI ecosystem together.</p>
+          <p class="act-body">We set up Claude or ChatGPT around your business and the processes you repeat every week, and we stay with each one until it runs the way you need it to. It all lives in your accounts.</p>
+          <ul class="act-list">
+            <li><i>01</i><span>1 full day or 2 half-days, just us.</span></li>
+            <li><i>02</i><span><b>Your AI ecosystem,</b> set up with workflows and agents working by the end of the day.</span></li>
+            <li><i>03</i><span><b>1 month of support</b> afterwards, while we tune things in.</span></li>
+          </ul>
+          <a class="cta" href="mailto:hello@elenakell.com?subject=Enquiry%3A%20VIP%20AI%20Day"><span class="cta-label">Enquire about the VIP Day</span></a>
+        </div>
+        <figure class="arch">
+          <img data-parallax crossorigin="anonymous" alt="The Astronomer by Johannes Vermeer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Johannes_Vermeer_-_The_Astronomer_-_1668.jpg/960px-Johannes_Vermeer_-_The_Astronomer_-_1668.jpg">
+          <figcaption>Vermeer, The Astronomer, 1668</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="act act-coaching" id="coaching" data-chapter="coaching">
+      <svg class="act-lines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" y1="556" x2="1600" y2="556" pathLength="1"/><line x1="989" y1="0" x2="989" y2="900" pathLength="1"/>
+        <line x1="0" y1="96" x2="1600" y2="96" pathLength="1"/><path d="M989 900 A 611 556 0 0 1 1600 344" pathLength="1"/>
+      </svg>
+      <div class="act-inner">
+        <div class="act-text">
+          <p class="eyebrow"><i>IV</i> 1:1 · By application · For leaders and entrepreneurs</p>
+          <h2 class="act-title">1:1 Coaching</h2>
+          <p class="act-lead">We name the biggest goal in front of you. Then every session works towards it.</p>
+          <p class="act-body">For leaders and entrepreneurs with an ambitious goal and a sense that AI could help them reach it. You learn AI on the work that's already on your desk, at your pace, with me beside you.</p>
+          <ul class="act-list">
+            <li><i>01</i><span><b>One goal.</b> We start by defining what matters most right now, in your career or your business.</span></li>
+            <li><i>02</i><span><b>Sessions built around it.</b> Each one moves that goal forward, and you get fluent in AI along the way.</span></li>
+            <li><i>03</i><span><b>Yours to keep.</b> Everything we build lives in your accounts, and the thinking stays yours.</span></li>
+          </ul>
+          <a class="cta" href="mailto:hello@elenakell.com?subject=Application%3A%201%3A1%20Coaching"><span class="cta-label">Apply for coaching</span></a>
+        </div>
+        <figure class="arch">
+          <img data-parallax crossorigin="anonymous" class="pos-lady" alt="Lady with an Ermine by Leonardo da Vinci" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg/960px-Lady_with_an_Ermine_-_Leonardo_da_Vinci_-_Google_Art_Project.jpg">
+          <figcaption>Leonardo da Vinci, Lady with an Ermine, c. 1490</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="act act-membership" id="membership" data-chapter="membership" data-theme="light">
+      <svg class="act-lines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <line x1="0" y1="556" x2="1600" y2="556" pathLength="1"/><line x1="989" y1="0" x2="989" y2="900" pathLength="1"/>
+        <line x1="0" y1="96" x2="1600" y2="96" pathLength="1"/><path d="M989 900 A 611 556 0 0 1 1600 344" pathLength="1"/>
+      </svg>
+      <div class="act-inner">
+        <div class="act-text">
+          <p class="eyebrow"><i>V</i> The AI Solopreneur Club</p>
+          <h2 class="act-title">Membership</h2>
+          <p class="act-lead">Learning AI is better with other humans in the room.</p>
+          <p class="act-body">A community of entrepreneurs who are building on their own and figuring out AI together. Real people, real questions, and a place to ask the thing you think you should already know.</p>
+          <ul class="act-list">
+            <li><i>01</i><span><b>Weekly calls.</b> Bring what you're stuck on and get hot-seat AI coaching.</span></li>
+            <li><i>02</i><span><b>Claude mastery courses.</b> Step by step, from the basics to a Claude setup of your own.</span></li>
+            <li><i>03</i><span><b>The AI Assistants Vault.</b> Assistants you can put to work in your business, with new ones added weekly.</span></li>
+          </ul>
+          <a class="cta" href="https://www.skool.com/aisolopreneurclub/about" target="_blank" rel="noopener"><span class="cta-label">Join us on Skool</span></a>
+        </div>
+        <figure class="arch">
+          <img data-parallax crossorigin="anonymous" class="pos-graces" alt="The Three Graces, from Primavera by Sandro Botticelli" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg/1920px-Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg">
+          <figcaption>Botticelli, Primavera (detail), c. 1480</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- VI. WITH ELENA -->
+  <section class="with" id="with-elena" data-chapter="with-elena">
+    <div class="with-sky" aria-hidden="true"><img crossorigin="anonymous" decoding="async" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_1099_-_Mauritshuis.jpg/1920px-Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_1099_-_Mauritshuis.jpg"></div>
+    <div class="ab-head">
+      <div class="ab-pin"><div class="ab-pin-inner">
+      <p class="eyebrow"><i>VI</i> About Elena</p>
+      <div class="ab-stage">
+        <h2 class="ab-title"><span>The human</span><em>in the room</em></h2>
+        <img class="ab-me" decoding="async" alt="Elena Kell, smiling with her arms folded" src="https://elenakell-website.netlify.app/assets/elena-cutout.png">
+      </div>
+      </div></div>
+      <div class="ab-bio">
+        <p>I've worked in corporate AI and AI ethics since 2018, long before generative AI became an everyday conversation. In my corporate career I helped teams work out where this technology belongs in a real business, and how to use it responsibly.</p>
+        <p>Now I run an AI education, strategy and media company. I teach entrepreneurs and leaders to work with AI without losing their edge.</p>
+      </div>
+      <p class="ab-sign">Elena Kell</p>
+    </div>
+
+    <p class="eyebrow with-sub">Beyond the workshop room</p>
+    <ul class="with-list">
+      <li><a href="mailto:hello@elenakell.com?subject=Enquiry%3A%20Speaking">
+        <i>01</i><h3>Speaking</h3><p>Keynotes and panels on staying human in the AI era.</p><span class="go">Book me</span></a></li>
+      <li><a href="mailto:hello@elenakell.com?subject=Enquiry%3A%20Creator%20collaboration">
+        <i>02</i><h3>Creator collaborations</h3><p>Partnerships for my YouTube channel and newsletter.</p><span class="go">Pitch me</span></a></li>
+    </ul>
+
+    <div class="media">
+      <a class="media-card" href="https://www.youtube.com/@elenakell" target="_blank" rel="noopener">
+        <img crossorigin="anonymous" class="m-flora" loading="lazy" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg/1920px-Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg">
+        <span class="media-kicker">Watch</span>
+        <span class="media-play" aria-hidden="true"></span>
+        <h3>YouTube</h3>
+        <p>Practical AI tutorials for solo entrepreneurs.</p>
+      </a>
+      <a class="media-card" href="https://elenakell.substack.com/subscribe" target="_blank" rel="noopener">
+        <img crossorigin="anonymous" class="m-hora" loading="lazy" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1920px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg">
+        <span class="media-kicker">Read</span>
+        <span class="media-letter" aria-hidden="true">E</span>
+        <h3>Substack</h3>
+        <p>A letter on AI, business and staying yourself.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- VII. SAY HELLO -->
+  <section class="hello" id="hello" data-chapter="hello">
+    <div class="touch-art" aria-hidden="true">
+      <img crossorigin="anonymous" loading="lazy" decoding="async" alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/1920px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg">
+      <i class="touch-spark"></i><i class="touch-burst"></i>
+    </div>
+    <div class="hello-body">
+      <a class="hello-link" href="mailto:hello@elenakell.com?subject=Hello%20from%20your%20website" aria-label="Get in touch by email">
+        <h2 class="hello-title"><span class="line"><span>Get in</span></span><span class="line serif"><span><em>touch.</em></span></span></h2>
+        <i class="hello-rule" aria-hidden="true"></i>
+      </a>
+    </div>
+    <footer class="foot">
+      <span>© 2026 Elena Kell / Future Self AB</span>
+      <span class="foot-links">
+        <a href="https://www.youtube.com/@elenakell" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.linkedin.com/in/elenakell/" target="_blank" rel="noopener">LinkedIn</a>
+      </span>
+    </footer>
+  </section>
+
+</main>
+<img id="sky-src" crossorigin="anonymous" alt="" hidden src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/NASA_Unveils_Celestial_Fireworks_as_Official_Hubble_25th_Anniversary_Image.jpg/1920px-NASA_Unveils_Celestial_Fireworks_as_Official_Hubble_25th_Anniversary_Image.jpg">
+<img id="venus-src" crossorigin="anonymous" alt="" hidden src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1920px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg">
+<img id="hero-src" crossorigin="anonymous" alt="" hidden src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg/1920px-Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg">
+<script src="main.js?v=53"></script>
+</body>
+</html>
