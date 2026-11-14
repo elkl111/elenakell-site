@@ -166,3 +166,21 @@
 /* intersection: clip both circles explicitly. Some browsers stop honouring the rounded
    overflow once the layers inside are moved or blended, which showed the AI circle as a square */
 .ring{clip-path:circle(50% at 50% 50%);-webkit-clip-path:circle(50% at 50% 50%);isolation:isolate}
+
+/* offer cards hold still before the next one covers them, so there is time to read and reach the button */
+.act{margin-bottom:85vh}
+.act:last-child{margin-bottom:0}
+.acts{padding-bottom:60vh}
+@media (max-width:760px){.act{margin-bottom:45vh}.acts{padding-bottom:30vh}}
+/* and the text arrives sooner, so the button is already there when the card settles */
+.act-text>.eyebrow,.act-lead,.act-body,.act-list li,.act-text>.cta{transition-duration:.6s,.6s,.75s,.45s,.45s,.45s}
+.act.live .act-lead{transition-delay:.04s}
+.act.live .act-body{transition-delay:.08s}
+.act.live .act-list li:nth-child(1){transition-delay:.12s}
+.act.live .act-list li:nth-child(2){transition-delay:.16s}
+.act.live .act-list li:nth-child(3){transition-delay:.2s}
+.act.live .act-text>.cta{transition-delay:.26s,.26s,.26s,0s,0s,0s}
+.act-list::before{transition:transform .8s .1s var(--ease)}
+.acts{padding-bottom:0}
+.acts::after{content:"";display:block;height:60vh}
+@media (max-width:760px){.acts::after{height:30vh}}

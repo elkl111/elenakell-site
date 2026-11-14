@@ -328,7 +328,8 @@ void main(){
     M.inter = [top(inter), inter.offsetHeight];
     // each card's natural position; tall cards (phones) pin once their bottom edge reaches the screen bottom
     let run = top(acts[0].parentElement);
-    M.acts = acts.map(a => { const y = run; run += a.offsetHeight; a.style.top = Math.min(0, vh - a.offsetHeight) + 'px'; return y; });
+    // (the gap after each card is its "hold": how long it stays fully readable before the next one arrives)
+    M.acts = acts.map(a => { const y = run; run += a.offsetHeight + (parseFloat(getComputedStyle(a).marginBottom) || 0); a.style.top = Math.min(0, vh - a.offsetHeight) + 'px'; return y; });
     M.actH = acts[0].offsetHeight;
     M.actsEnd = top(acts[0].parentElement) + acts[0].parentElement.offsetHeight;
     M.darkEnd = top($('.acts')) + vh * .2;
@@ -414,7 +415,7 @@ void main(){
       const e = reduced ? 1 : clamp(1 - top / vh);
       const ee = 1 - Math.pow(1 - e, 2.2);
       a.style.setProperty('--e', ee.toFixed(4));
-      if (e > .42) a.classList.add('live'); else if (e < .05) a.classList.remove('live');
+      if (e > .28) a.classList.add('live'); else if (e < .05) a.classList.remove('live');
       const st = archState[i];
       if (st) {
         st.rx = lerp(st.rx, st.trx, .08); st.ry = lerp(st.ry, st.try_, .08);
